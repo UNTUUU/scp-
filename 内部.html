@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>内部</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .row .col-md-4 {
+            height: 100px;
+            border: 1px solid #f00;
+        }
+
+        .t {
+            width: 800px;
+            border: 1px solid White;
+        }
+
+        .c {
+            width: 300px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .c img {
+            display: block;
+            width: 100%
+        }
+
+        .a {
+            float: right;
+            width: 450px;
+        }
+
+        .photo {
+
+            float: left;
+
+            width: 20%;
+
+
+
+        }
+
+        .intro {
+
+            float: right;
+
+            width: 50%;
+
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .baise {
+            background-color: white;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .mg8 {
+            margin: 8px;
+        }
+
+        .mgt8 {
+            margin-top: 8px;
+        }
+
+        .daohang {
+            padding: 10px 20px;
+            border-bottom: 1px solid grey;
+        }
+
+        .y {
+            box-shadow: rgb(0 0 0/ 12%) 0px 2px --1px,
+                rgb(0 0 0/ 14%) 0px 1px 1px 0px, rgb(0 0 0/ 12%) 0px 1px 3px 0px
+        }
+
+        a.t {
+            text-align: center;
+        }
+
+        /*当屏幕宽度小于600px时要改变的css*/
+        body {
+            background-color: rgba(251, 255, 192, 0.342);
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: rgba(89, 97, 89, 0.226);
+            }
+
+            .ceBin {
+                display: none;
+            }
+
+            .v {
+                display: block;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <script>
+        function HiddenDiv() {
+            document.getElementById("OuterDiv").style.display = 'none';//最好在隐藏的时候 将宽度设置为auto（自适应）
+            document.getElementById("OuterDiv").style.width = 'auto';
+        }
+    </script>
+
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2; background-color: rgb(43, 46, 48);" class="baise y mg8 ceBin">
+        <!--logo-->
+        <div class="flex" style="padding: 2px;align-items: center;justify-content: center;">
+            <img src="https://i.328888.xyz/2023/01/14/wGIq5.jpeg" alt="logo" height="90px">
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="daohang y">
+                <h3>scp基金会</h3>
+            </div>
+            <div class="daohang y">导航栏</div>
+            <div class="daohang y">导航栏</div>
+            <div class="daohang y">导航栏</div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column y container" style="background-color:rgb(160, 160, 160)">
+        <!--头部栏-->
+        <div style="height: 60px; z-index: 1;text-align:center;background-color:rgb(95, 107, 119)" class="baise y">
+            <div hidden="hiddn" class="v">
+                <ul>
+                    <li><a class="active" href="#home">scp人员编制</a></li>
+                    <li><a href="#news">scp怪物</a></li>
+                    <li><a href="#contact">联系</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--内容区-->
+        <div class="flex1 flex mg8 y col-md-4 col-sm-6">
+            <!--数据区-->
+            <div class="flex1 column y">
+                <!--列表区-->
+                <div style="height: 160px;background-color:rgb(87, 87, 87)" class="baise mgt8 y golf t flex1">
+                    <h1 style="color:rgb(255, 145, 0);
+                    text-align:center;">
+                        宗旨
+                    </h1>
+                    <div style="text-align:center;color:red; width: 720px;
+                    height: 330px;
+                    font: 16px 宋体;
+                    direction: ltr;
+                    overflow: auto;">
+                        <h2>收容，控制，保护</h2>
+                        <div style="text-align:center;">
+                            <h3>
+                                <a href="scp注册表.html">
+                                    宗旨解释
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 160px;text-align:center;background-color:rgb(77, 77, 77);"
+                    class="baise mgt8 y golf t flex1 direction: ltr;overflow: auto;">
+                    <div class="c">
+                        <a href="">
+                            <img src="https://i.328888.xyz/2023/01/18/HkWqk.jpeg" border="0" alt="scp-096"
+                                height="160px">
+                    </div>
+                    <div>
+                        <h1 style="color:red;">重新收容096</h1>
+                        <p>
+                            scp096图像被人看到，<br>因此突破收容，<br>为此小队出发收容096.
+                        </p>
+                        </a>
+                    </div>
+                </div>
+                <div style="height: 160px;text-align:center;background-color:rgb(77, 77, 77);"
+                    class="baise mgt8 y golf t flex1 direction: ltr;overflow: auto;">
+                    <div class="c">
+                        <a href="">
+                            <img src="https://i.328888.xyz/2023/01/22/O5Y8N.png" alt="" height="160px">
+                        </a>
+                    </div>
+                    <h1 style="color:red">scp调查行动</h1>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
